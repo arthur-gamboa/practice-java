@@ -5,10 +5,10 @@ public class Employee extends Person {
     public String getName() {
         return this.otherName;
     }
-    public String getAge() {
-        // error, age property is private
-        return this.age;
-    }
+//    public String getAge() {
+//        // error, age property is private
+//        return this.age;  /* uncomment this line for error message */
+//    }
 
     public Employee(String employeeName) {
         super(employeeName);

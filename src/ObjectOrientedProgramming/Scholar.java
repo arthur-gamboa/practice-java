@@ -5,6 +5,8 @@ class Scholar {
     //////////////////////////////////////////////////////////////////////////////
     public String name;
     public String cohort;
+    //grade is defined as private, but we've also created a method to allow
+    //access to (but not re-assigning) the property named shareGrade.
     private double grade;
 
 //    public Scholar(String name) {

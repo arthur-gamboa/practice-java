@@ -90,7 +90,7 @@ public class Collections {
         usernames.putIfAbsent("Casey", "XpenguinX");
         System.out.println(usernames);
 
-        // 5. What happend with the .putIfAbsent()? Did both items get added? Why/why not?
+        // 5. What happened with the .putIfAbsent()? Did both items get added? Why/why not?
           // the key "Casey" was present, so we did not add that key/value pair with XpenguinX
           // the key "Daniel" WAS absent, so we added that key/value pair to the HashMap
 

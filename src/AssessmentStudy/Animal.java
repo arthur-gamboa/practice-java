@@ -6,6 +6,10 @@ public class Animal {
 
         Animal tiger = new Animal();
         tiger.name = "Tiger";
+
+        System.out.println(tiger.getName());
+        tiger.setName("Tigger");
+        System.out.println(tiger.roar());
     }
 
     //Private instances

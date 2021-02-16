@@ -82,6 +82,8 @@ public class CodingBat {
 //                (Math.abs(200 - n) <= 10));
 //    }
 
+//TODO: 8. Given 2 int values, return true if one is negative and one is positive. Except if the parameter "negative" is true, then return true only if both are negative.
+
 
 
 }

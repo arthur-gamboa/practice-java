@@ -53,4 +53,35 @@ public class CodingBat {
         }
     }
 
+//TODO: 6. Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10.
+
+    public boolean makes10(int a, int b) {
+        if (a == 10 || b ==10) {
+            return true;
+        } else if (a + b == 10) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+//TODO: 7. Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes the absolute value of a number.
+
+    public boolean nearHundred(int n) {
+        if ((Math.abs(100 - n) <= 10)) {
+            return true;
+        } else if ((Math.abs(200 - n) <= 10)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+//    //another method//
+//    public boolean nearHundred(int n) {
+//        return ((Math.abs(100 - n) <= 10) ||
+//                (Math.abs(200 - n) <= 10));
+//    }
+
+
+
 }

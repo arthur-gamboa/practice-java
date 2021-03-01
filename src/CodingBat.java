@@ -153,6 +153,35 @@ public class CodingBat {
         return (n % 3 == 0) || (n % 5 == 0);
     }
 
+//TODO: 15. Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, so "kitten" yields"kikittenki". If the string length is less than 2, use whatever chars are there.
 
+    public String front22(String str) {
+        int take = 2;
+        if (take > str.length()) {
+            take = str.length();
+        }
+        String front = str.substring(0, take);
+        return front + str + front;
+    }
+
+//TODO: 16. Given a string, return true if the string starts with "hi" and false otherwise.
+
+    public boolean startHi(String str) {
+        if (str.length() < 2) return false;
+        String wordHi = str.substring(0, 2);
+        return wordHi.equals("hi");
+    }
+
+//TODO: 17. Given two temperatures, return true if one is less than 0 and the other is greater than 100.
+
+    public boolean icyHot(int tempOne, int tempTwo) {
+        return (tempOne < 0 && tempTwo > 100) || (tempOne > 100 && tempTwo < 0);
+    }
+
+//TODO: 18. Given 2 int values, return true if either of them is in the range 10..20 inclusive.
+
+    public boolean in1020(int x, int y) {
+        return ((x >= 10 && x <= 20) || (y >= 10 && y <= 20));
+    }
 
 }

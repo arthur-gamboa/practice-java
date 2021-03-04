@@ -184,4 +184,21 @@ public class CodingBat {
         return ((x >= 10 && x <= 20) || (y >= 10 && y <= 20));
     }
 
+//TODO: 19. We'll say that a number is "teen" if it is in the range 13..19 inclusive. Given 2 int values, return true if one or the other is teen, but not both.
+
+    public boolean loneTeen(int x, int y) {
+        boolean xTeen = (x >= 13 && x <= 19);
+        boolean yTeen = (y >= 13 && y <= 19);
+        return (xTeen && !yTeen) || (!xTeen && yTeen);
+    }
+
+//TODO: 20. Given a string, if the string "del" appears starting at index 1, return a string where that "del" has been deleted. Otherwise, return the string unchanged.
+
+    public String delDel(String str) {
+        if (str.length() >= 4 && str.substring(1, 4).equals("del")) {
+            return str.charAt(0) + str.substring(4);
+        }
+        return str;
+    }
+
 }

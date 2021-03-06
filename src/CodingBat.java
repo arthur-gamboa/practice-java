@@ -201,4 +201,54 @@ public class CodingBat {
         return str;
     }
 
+//TODO: 21. Return true if the given string begins with "mix", except the 'm' can be anything, so "pix", "9ix" .. all count.
+
+    public boolean mixStart(String str) {
+        if (str.length() < 3) return false;
+
+        String str2 = str.substring(1, 3);
+        return str2.equals("ix");
+    }
+
+//TODO: 22. Given a string, return a string made of the first 2 chars (if present), however include first char only if it is 'o' and include the second only if it is 'z', so "ozymandias" yields "oz".
+
+    public String startOz(String str) {
+        String result = "";
+
+        if (str.length() >= 1 && str.charAt(0) =='o') {
+            result = result + str.charAt(0);
+        }
+        if (str.length() >= 2 && str.charAt(1) =='z') {
+            result = result + str.charAt(1);
+        }
+        return result;
+    }
+    // extra review on this problem
+
+//TODO: Given three int values, a b c, return the largest.
+
+    public int intMax(int x, int y, int z) {
+        int highest = Math.max(x, y);
+
+        if (z > highest) {
+            highest = z;
+        }
+        return highest;
+    }
+
+//TODO: Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number.
+
+    public int close10(int x, int y) {
+        int rand1 = Math.abs(x - 10);
+        int rand2 = Math.abs(y - 10);
+
+        if (rand1 < rand2) {
+            return x;
+        }
+        if (rand2 < rand1) {
+            return y;
+        }
+        return 0;
+    }
+
 }

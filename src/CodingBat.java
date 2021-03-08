@@ -251,4 +251,22 @@ public class CodingBat {
         return 0;
     }
 
+//TODO: 25. Given 2 int values, return true if they are both in the range 30..40 inclusive, or they are both in the range 40..50 inclusive.
+
+    public boolean in3050(int x, int y) {
+        if (x >= 30 && x <= 40 && y >= 30 && y <= 40) {
+            return true;
+        }
+        return x >= 40 && x <= 50 && y >= 40 && y <= 50;
+    }
+
+//TODO: 26. Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or return 0 if neither is in that range.
+
+    public int max1020(int x, int y) {
+        if (x >= 10 && x <= 20) return x;
+        if (y >= 10 && y <= 20) return y;
+        return 0;
+    }
+        // extra review on this problem
+
 }

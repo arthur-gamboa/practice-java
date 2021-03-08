@@ -225,7 +225,7 @@ public class CodingBat {
     }
     // extra review on this problem
 
-//TODO: Given three int values, a b c, return the largest.
+//TODO: 23. Given three int values, a b c, return the largest.
 
     public int intMax(int x, int y, int z) {
         int highest = Math.max(x, y);
@@ -236,7 +236,7 @@ public class CodingBat {
         return highest;
     }
 
-//TODO: Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number.
+//TODO: 24. Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number.
 
     public int close10(int x, int y) {
         int rand1 = Math.abs(x - 10);

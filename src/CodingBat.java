@@ -281,6 +281,10 @@ public class CodingBat {
         return (count >= 1 && count <= 3);
     }
 
+//TODO: 28. Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57. Note that the % "mod" operator computes remainders, so 17 % 10 is 7.
 
+    public boolean lastDigit(int x, int y) {
+        return (x % 10 == y % 10);
+    }
 
 }

@@ -286,6 +286,7 @@ public class CodingBat {
     public boolean lastDigit(int x, int y) {
         return (x % 10 == y % 10);
     }
+<<<<<<< HEAD
 
 //TODO: 29. Given a string, return a new string where the last 3 chars are now in upper case. If the string has less than 3 chars, uppercase whatever is there. Note that str.toUpperCase() returns the uppercase version of a string.
 
@@ -297,5 +298,7 @@ public class CodingBat {
 
         return front + back.toUpperCase();
     }
+=======
+>>>>>>> 2ccc44db7e53f6988cebce9ed7aee502e11297be
 
 }

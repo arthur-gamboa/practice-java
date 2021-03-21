@@ -286,7 +286,6 @@ public class CodingBat {
     public boolean lastDigit(int x, int y) {
         return (x % 10 == y % 10);
     }
-<<<<<<< HEAD
 
 //TODO: 29. Given a string, return a new string where the last 3 chars are now in upper case. If the string has less than 3 chars, uppercase whatever is there. Note that str.toUpperCase() returns the uppercase version of a string.
 
@@ -298,7 +297,23 @@ public class CodingBat {
 
         return front + back.toUpperCase();
     }
-=======
->>>>>>> 2ccc44db7e53f6988cebce9ed7aee502e11297be
+
+//TODO: 30. Given a non-empty string and an int N, return the string made starting with char 0, and then every Nth char of the string. So if N is 3, use char 0, 3, 6, ... and so on. N is 1 or more.
+
+    public String everyNth(String str, int x) {
+        String result = "";
+
+        for (int i=0; i<str.length(); i = i + x) {
+            result += str.charAt(i);
+        }
+        return result;
+    }
+
+//TODO: 31. We'll say that a number is "teen" if it is in the range 13..19 inclusive. Given 3 int values, return true if 1 or more of them are teen.
+
+    public boolean hasTeen(int x, int y, int z) {
+
+        return (x >= 13 && x <= 19) || (y >= 13 && y <= 19) || (z >= 13 && z <= 19);
+    }
 
 }

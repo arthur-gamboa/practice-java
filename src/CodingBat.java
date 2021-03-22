@@ -316,4 +316,34 @@ public class CodingBat {
         return (x >= 13 && x <= 19) || (y >= 13 && y <= 19) || (z >= 13 && z <= 19);
     }
 
+//TODO: 32. Given a string and a non-negative int n, return a larger string that is n copies of the original string.
+
+    public String stringTimes(String str, int n) {
+        return String.valueOf(str).repeat(Math.max(0, n));
+        // more practice on this problem.
+    }
+
+//TODO: 33. Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front;
+
+    public String frontTimes(String str, int n) {
+        int frontLen = 3;
+        if (frontLen > str.length()) {
+            frontLen = str.length();
+        }
+        String front = str.substring(0, frontLen);
+
+        return front.repeat(Math.max(0, n));
+    }
+
+//TODO: 34. Count the number of "xx" in the given string. We'll say that overlapping is allowed, so "xxx" contains 2 "xx".
+
+    int countXX(String str) {
+        int count = 0;
+        for (int i = 0; i < str.length()-1; i++) {
+            if (str.substring(i, i +2 ).equals("xx")) count++;
+        }
+        return count;
+        // more practice on this problem.
+    }
+
 }

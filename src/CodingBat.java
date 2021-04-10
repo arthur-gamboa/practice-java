@@ -408,4 +408,25 @@ public class CodingBat {
         return count;
     }
 
+//TODO: 40. Given an array of ints, return true if one of the first 4 elements in the array is a 9. The array length may be less than 4.
+
+    public boolean arrayFront9(int[] nums) {
+        int end = nums.length;
+        if (end > 4) end = 4;
+
+        for (int i = 0; i < end; i++) {
+            if (nums [i] == 9) return true;
+        }
+        return false;
+    }
+
+//TODO: 41. Given an array of ints, return true if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+
+    public boolean array123(int[] nums) {
+        for (int i = 0; i < (nums.length - 2); i++) {
+            if (nums[i] == 1 && nums[i+1] == 2 && nums[i+2] == 3) return true;
+        }
+        return false;
+    }
+
 }

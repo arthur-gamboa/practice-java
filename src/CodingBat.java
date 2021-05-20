@@ -477,4 +477,29 @@ public class CodingBat {
         return result.toString();
     }
 
+//TODO: 45. Given an array of ints, return the number of times that two 6's are next to each other in the array. Also count instances where the second "6" is actually a 7.
+
+    public int array667(int[] nums) {
+        int count = 0;
+        for (int i = 0; i < (nums.length - 1); i++) {
+            if (nums[i] == 6) {
+                if (nums[i + 1] == 6 || nums[i + 1] == 7) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
+//TODO: 46. Given an array of ints, we'll say that a triple is a value appearing 3 times in a row in the array. Return true if the array does not contain any triples.
+
+    public boolean noTriples(int[] nums) {
+        for (int i = 0; i < (nums.length - 2); i++) {
+            int first = nums[i];
+            if (nums[i + 1] == first && nums[i + 2] == first) return false;
+        }
+
+        return true;
+    }
+
 }
